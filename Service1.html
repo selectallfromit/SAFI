@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tag Style with Tailwind</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <title>SAFI | Service 1</title>
 </head>
-
-<body class="bg-[#0000A3] flex flex-wrap justify-center items-center min-h-screen  p-8">
+<body class="flex flex-col overflow-x-hidden overflow-y-hidden m-0  bg-[url(images/HomeBg.jpg)] bg-center bg-cover h-screen w-full">
     <header class="flex w-full h-15 ml-28 p-2 justify-start items-center">
         <div id="Logo" class="flex m-4">
-            <p class="text-white text-5xl font-[800]">*</p>
-            <p class="text-2xl text-white font-semibold">safi.</p>
+            <p class="text-white mt-4 text-5xl font-[800]">*</p>
+            <p class="text-2xl mt-4 text-white font-semibold">safi.</p>
         </div>
         <nav>
             <ul class="flex ml-40 text-white text-mg">
-                <li class="m-6 font-[900]">
+                <li class="m-6">
                     <a href="Home.html">À propos</a>
                 </li>
-                <li class="m-6">
-                    <a href="">Services</a>
+                <li class="m-6 font-[900]">
+                    <a href="#">Services</a>
                 </li>
                 <li class="m-6">
                     <a href="Blog.html">Blog</a>
@@ -29,10 +28,70 @@
                 </li>
             </ul>
         </nav>
+        
     </header>
-    
-    
-    
 
-</body>
+    <body class="flex bg-[#0000aa] min-h-screen text-white">
+        <div class="flex flex-col justify-center items-center w-full h-1/2 ">
+            <div class="text-center m-8 text-sm text-[#ffffff]">
+                <h1 class="text-6xl font-[500] mb-8 mt-4">
+                    Our Expertise
+                </h1>
+                <p class="mb-8 text-lg ml-4 font-[200]">
+                    Our blend of creativity and technical finesse ensures bespoke solutions that<br/>
+                    elevate brands and captivate audiences, leaving an unforgettable imprint on the<br>idées.
+                    design landscape.<br> 
+                </p>
+            </div>
+            
+        </div>
+        <div class="w-screen h-1/2 flex flex-col justify-center items-center ">
+            <div class="relative w-[700px] h-[300px]">
+                <div
+                    class="absolute top-[20px] left-[20px] rotate-[-5deg] px-12 py-2 bg-[#4B70F5] text-white font-semibold text-mg rounded-full shadow-md z-10"
+                >
+                    Web dev
+                </div>
+                <div
+                    class="absolute top-[30px] left-[160px] rotate-[5deg] px-12 py-2 bg-[#ffffff] font-med text-mg rounded-full shadow-md z-10"
+                >
+                    Software dev
+                </div>
+                <div
+                    class="absolute top-[20px] left-[325px] rotate-[-10deg] px-12 py-2 bg-[#4B70F5] text-white font-semibold text-mg rounded-full shadow-md z-10"
+                >
+                    UI UX Design
+                </div>
+                <div
+                    class="absolute top-[20px] left-[500px] rotate-[10deg] px-12 py-2 bg-[#ffffff] font-extrabold text-mg rounded-full shadow-md z-40"
+                >
+                    Cybersecurity
+                </div>
+                <div
+                    class="absolute top-[60px] left-[10px] rotate-[8deg] px-12 py-2 bg-[#ffffff] font-extrabold text-mg rounded-full shadow-md z-30"
+                >
+                    Digital services
+                </div>
+                <div
+                    class="absolute top-[80px] left-[190px] rotate-[-1deg] px-12 py-2 bg-[#4B70F5] text-white font-semibold text-mg rounded-full shadow-md z-30"
+                >
+                    Deployment & Hosting
+                </div>
+                <div
+                    class="absolute top-[70px] left-[410px] rotate-[6deg] px-12 py-2 bg-[#ffffff] font-extrabold text-sm rounded-full shadow-md z-30"
+                >
+                    Branding
+                </div>
+                <div
+                    class="absolute top-[65px] left-[540px] rotate-[-15deg] px-12 py-2 bg-[#4B70F5] text-white font-medium text-sm rounded-full shadow-md z-30"
+                >
+                    Graphics
+                </div>
+            </div>
+            <div class="flex flex-col h-48 justify-end items-end  mb-16 ">
+                <a class="flex w-40 h-10 bg-white outline-none rounded-full shadow-[0_0_10px_rgba(0,0,0,0.1)] cursor-pointer text-[16px] text-[#0000A3] text-center justify-center text-sm font-semibold items-center" href="Service2.html">Explore More</a>
+            </div>
+        </div>
+        
+</body> 
 </html>

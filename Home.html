@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>SAFI | Home</title>
 </head>
-<body class="overflow-x-hidden overflow-y-hidden m-0  bg-[url(images/HomeBg.jpg)] bg-center bg-cover h-screen w-full">
+<body class="m-0 bg-[url('images/HomeBg.jpg')] bg-center bg-cover min-h-screen w-full overflow-hidden">
+
     <header class="flex w-full h-15 ml-28 p-2 justify-start items-center">
         <div id="Logo" class="flex m-4">
-            <p class="text-white text-5xl font-[800]">*</p>
-            <p class="text-2xl text-white font-semibold">safi.</p>
+            <p class="text-white  text-5xl font-[800]">*</p>
+            <p class="text-2xl  text-white font-semibold">safi.</p>
         </div>
         <nav>
             <ul class="flex ml-40 text-white text-mg">
@@ -18,7 +19,7 @@
                     <a href="Home.html">À propos</a>
                 </li>
                 <li class="m-6">
-                    <a href="">Services</a>
+                    <a href="Service1.html">Services</a>
                 </li>
                 <li class="m-6">
                     <a href="Blog.html">Blog</a>
@@ -29,20 +30,26 @@
             </ul>
         </nav>
     </header>
-    <main class="h-screen w-full flex flex-col justify-start items-center">
-        <div >
-            <div><h1 class="text-white text-7xl text-center mt-32 font-[1000]">Votre idée, notre<br> mission</h1></div>
-            <div><h3 class="text-white text-center m-8 text-sm ">Chez Safi, nous accompagnons les entrepreneurs, startups et créateurs dans la concrétisation de leurs idées. <br>
-                    De la création de votre identité visuelle au développement de logiciels, nous vous aidons à bâtir votre projet numérique de A à Z.</h3></div>
-            <div class="flex justify-center items-center gap-4">
-                <button class="w-32 h-7 bg-white border border-[#00C896] outline-none rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.1)] cursor-pointer text-[16px] text-[#0000A3] text-center text-sm font-semibold">
-                    Get Started
-                </button>
-                <button class="w-32 h-7 bg-trasparent border outline-none rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.1)] cursor-pointer text-[16px] text-white text-center text-sm font-semibold">
-                    Contact us
-                </button>
+
+
+    <main class="flex flex-col items-center text-center px-4 mt-20">
+        
+        <h1 class="text-white text-4xl md:text-6xl font-black mb-6">Votre idée, notre<br> mission</h1>
+
+
+        <p class="text-white text-sm md:text-base mb-8 max-w-2xl">
+        Chez Safi, nous accompagnons les entrepreneurs, startups et créateurs dans la concrétisation de leurs idées.
+        De la création de votre identité visuelle au développement de logiciels, nous vous aidons à bâtir votre projet numérique de A à Z.
+        </p>
+        <div class="flex flex-wrap justify-center gap-6">
+            <div class=" h-48 mb-8 ">
+                <a class="flex w-40 h-9 bg-white outline-none rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.1)] cursor-pointer text-[16px] text-[#0000A3] text-center justify-center text-sm font-semibold items-center" href="Service1.html">Get Started</a>
+            </div>
+            <div class=" h-48 mb-8 ">
+                <a class="flex w-40 h-9 bg-[#0000A3] border border-[#ffffff] outline-none rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.1)] cursor-pointer text-[16px] text-[#ffffff] text-center justify-center text-sm font-semibold items-center" href="Contact.html">Contact US</a>
             </div>
         </div>
     </main>
+
 </body>
 </html>
