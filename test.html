@@ -1,22 +1,41 @@
-<header class="flex w-full h-15 ml-28 p-2 justify-start items-center">
-        <div id="Logo" class="flex m-4">
-            <p class="text-white  text-5xl font-[800]">*</p>
-            <p class="text-2xl  text-white font-semibold">safi.</p>
-        </div>
-        <nav>
-            <ul class="flex ml-40 text-white text-mg">
-                <li class="m-6 font-[900]">
-                    <a href="Home.html">À propos</a>
-                </li>
-                <li class="m-6">
-                    <a href="">Services</a>
-                </li>
-                <li class="m-6">
-                    <a href="Blog.html">Blog</a>
-                </li>
-                <li class="m-6 ">
-                    <a href="Contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+<body>
+  <section class="flex flex-col md:flex-row items-center justify-between min-h-screen bg-blue-500 text-white px-6 md:px-20 py-12">
+  <!-- Colonne de gauche -->
+  <div class="md:w-1/2 space-y-6">
+    <header class="flex items-center justify-between mb-8">
+      <div class="text-3xl font-bold">safi.</div>
+      <nav class="hidden md:flex space-x-6 text-white text-sm font-medium">
+        <a href="#">À propos</a>
+        <a href="#">Services</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
     </header>
+
+    <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+      Posez les fondations de votre marque.
+    </h1>
+    <p class="text-lg leading-relaxed">
+      Chez Safi, nous accompagnons les entrepreneurs, startups et créateurs dans la concrétisation de leurs idées. De la création de votre identité visuelle au développement de logiciels, nous vous aidons à bâtir votre projet numérique de A à Z.
+    </p>
+    <button class="bg-white text-blue-600 px-6 py-3 rounded-md text-sm font-semibold hover:bg-gray-100 transition">
+      Next
+    </button>
+  </div>
+
+  <!-- Colonne de droite -->
+  <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+    <img src="images/img4.1.jpg" alt="Illustration créative" class="max-w-full h-auto drop-shadow-xl">
+  </div>
+</section>
+
+</body>
+</html>

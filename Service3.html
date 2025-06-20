@@ -7,51 +7,74 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="m-0 p-0">
-    <div class="flex h-screen">
-        <div class="w-1/2 bg-[#0000A3] text-[#ffffff] flex flex-col justify-start px-20">
-            <div class="flex flex-row mb-24 mt-6 ">
-                <div id="Logo" class="flex m-4 w-8">
-                    <p class="text-white  text-5xl font-[800]">*</p>
-                    <p class="text-2xl  text-white font-semibold">safi.</p>
-                </div>
-                <nav>
-                    <ul class="flex ml-28 text-white font-">
-                        <li class="m-6 ">
-                            <a href="Home.html">A propos</a>
-                        </li>
-                        <li class="m-6 font-[900]">
-                            <a href="Service1.html">Services</a>
-                        </li>
-                        <li class="m-6 ">
-                            <a href="Blog.html">Blog</a>
-                        </li>
-                        <li class="m-6 ">
-                            <a href="">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <h1 class="text-5xl font-bold mb-4 mt-4">
-                Développons <br> ensemble vos outils digitaux.
-            </h1>
-            <p class="mb-8 text-mg ml-4 font-[200]">
-                Nous concevons des solutions logicielles sur mesure<br/>
-                pour tous vos besoins :<br>
-                . Applications web (vitrine, e-commerce, SaaS)<br>
-                . Applications mobiles (Android & iOS) <br>
-                . Logiciels desktop (Windows, Linux,<br> multiplateforme) <br>
-                · Sites vitrine et pages de présentation <br>
-                Des performances solides, une experience fluide et un <br>
-                développement 100 % adapté à votre vision.
-            </p>
-            <div class="flex flex-col h-48 justify-end items-end  mb-8 ">
-                <a class="flex w-28 h-9 bg-white border border-[#00C896] outline-none rounded-full shadow-[0_0_10px_rgba(0,0,0,0.1)] cursor-pointer text-[16px] text-[#0000A3] text-center justify-center text-sm font-semibold items-center" href="Service4.html">Next</a>
-            </div>
-            
-        </div>    
-        <div class="w-1/2 h-screen m-0 bg-[url('images/imgS3.jpg')] bg-contain bg-center">
+    <div class="flex flex-col md:flex-row h-auto md:h-screen">
+      <div class="w-full md:w-1/2 bg-[#0000A3] text-white flex flex-col justify-start px-6 md:px-20 py-6 relative">
+        
+        <!-- NAV -->
+        <div class="flex items-center justify-between">
+          <div id="Logo" class="flex items-center">
+            <p class="text-5xl font-[800]">*</p>
+            <p class="text-2xl ml-2 font-semibold">safi.</p>
+            <nav>
+              <ul id="navMenu" class="hidden md:flex flex-col md:flex-row md:ml-28 font-medium text-white ">
+                <li class="m-2 md:m-6"><a href="Home.html">A propos</a></li>
+                <li class="m-2 md:m-6 font-[900]"><a href="Service1.html">Services</a></li>
+                <li class="m-2 md:m-6"><a href="Blog.html">Blog</a></li>
+                <li class="m-2 md:m-6"><a href="">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Burger Icon -->
+          <button id="burger" class="block md:hidden">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
+        
+
+        <!-- Contenu -->
+         <h1 class="text-4xl sm:text-5xl font-bold my-4 mt-20">
+          Développons <br> ensemble vos outils digitaux.
+        </h1>
+        <p class="mt-8 mb-8 text-sm sm:text-base ml-2 sm:ml-4 font-[200] leading-relaxed">
+          Nous concevons des solutions logicielles sur mesure pour tous vos besoins :<br>
+          • Applications web (vitrine, e-commerce, SaaS)<br>
+          • Applications mobiles (Android & iOS)<br>
+          • Logiciels desktop (Windows, Linux, multiplateforme)<br>
+          • Sites vitrine et pages de présentation<br>
+          Des performances solides, une expérience fluide et un développement 100 % adapté à votre vision.
+        </p>
+
+        <!-- Bouton -->
+        <div class="flex justify-end mb-6 mt-12">
+          <a class="flex w-28 h-9 bg-white border border-[#00C896] rounded-full shadow-md cursor-pointer text-[#0000A3] text-sm font-semibold justify-center items-center"
+            href="Service4.html">Next</a>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="flex justify-center items-center md:w-1/2  md:mt-0 bg-[#0000A3]">
+        <img src="images/imgs3.8.jpg" alt="" class="rounded-full max-w-full h-auto drop-shadow-xl">
+      </div>
     </div>
+
+    <!-- Script Burger -->
+    <script>
+      const burger = document.getElementById('burger');
+      const menu = document.getElementById('navMenu');
+      burger.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('absolute');
+        menu.classList.toggle('bg-[#4B70F5]');
+        menu.classList.toggle('p-4');
+        menu.classList.toggle('rounded');
+        menu.classList.toggle('top-20');
+        menu.classList.toggle('left-6');
+        menu.classList.toggle('z-50');
+      });
+    </script>
 </body>
 </html>
