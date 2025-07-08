@@ -1,78 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safi | Votre idée, notre mission</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>SAFI | Home</title>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
 
-<body class="m-0 bg-[url('images/HomeBg.jpg')] bg-center bg-cover min-h-screen w-full overflow-hidden">
-    <header class="w-full text-white px-4 py-3 flex justify-start items-center">
-<!-- Logo -->
-        <div id="Logo" class="flex items-center ml-8">
-            <p class="text-6xl font-extrabold">*</p>
-            <p class="text-4xl font-bold ml-2">safi.</p>
-        </div>
-
-<!-- Navigation -->
-        <nav class="relative w-full md:w-auto flex items-center justify-end">
-<!-- Burger -->
-            <div class="md:hidden flex flex-col justify-center cursor-pointer mr-2" onclick="toggleMenu()">
-                <div class="w-6 h-1 bg-white my-1 rounded transition-all"></div>
-                <div class="w-6 h-1 bg-white my-1 rounded transition-all"></div>
-                <div class="w-6 h-1 bg-white my-1 rounded transition-all"></div>
-            </div>
-
-<!-- Menu -->
-            <ul id="menu" class="ml-28 gap-10 hidden md:flex md:flex-row flex-col absolute md:static top-full left-0 w-full md:w-auto bg-blue-700 md:bg-transparent z-20 text-base font-medium">
-                <li class="m-3 md:mx-4  font-[900]">
-                    <a href="Home.html">À propos</a>
-                </li>
-                <li class="m-3 md:mx-4 relative group">
-                    <a href="Service1.html" class="flex items-center gap-1">
-                    Services
-                    <span class="material-icons text-sm"></span>
-                    </a>
-<!-- Dropdown -->
-                    <ul class="absolute top-full left-0 hidden group-hover:block bg-white text-black min-w-[150px] shadow-lg mt-1 rounded">
-                        <li><a href="Service1.html" class="block px-4 py-2 hover:bg-blue-100">Service 1</a></li>
-                        <li><a href="Service2.html" class="block px-4 py-2 hover:bg-blue-100">Service 2</a></li>
-                        <li><a href="Service3.html" class="block px-4 py-2 hover:bg-blue-100">Service 3</a></li>
-                        <li><a href="Service4.html" class="block px-4 py-2 hover:bg-blue-100">Service 4</a></li>
-                    </ul>
-                </li>
-                <li class="m-3 md:mx-4 ">
-                    <a href="Blog.html">Blog</a>
-                </li>
-                <li class="m-3 md:mx-4 ">
-                    <a href="Contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="style.css" />
     
-    </header>
-    <main class="flex flex-col items-center text-center px-4 mt-20">
-        
-        <h1 class="text-white text-4xl md:text-6xl font-black mb-6">Votre idée, notre<br> mission</h1>
-        <p class="text-white text-sm md:text-base mb-12 mt-4 max-w-5xl">
-        Chez Safi, nous accompagnons les entrepreneurs, startups et créateurs dans la concrétisation de leurs idées. <br>
-        De la création de votre identité visuelle au développement de logiciels, nous vous aidons à bâtir votre projet numérique de A à Z.
-        </p>
-        <div class="flex flex-wrap justify-center gap-6">
-            <div class=" h-48 mb-8 ">
-                <a class="flex w-40 h-9 bg-white outline-none rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.1)] cursor-pointer text-[16px] text-[#0000A3] text-center justify-center text-sm font-semibold items-center" href="Service1.html">Get Started</a>
-            </div>
-            <div class=" h-48 mb-8 ">
-                <a class="flex w-40 h-9 bg-[#0000A3] border border-[#ffffff] outline-none rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.1)] cursor-pointer text-[16px] text-[#ffffff] text-center justify-center text-sm font-semibold items-center" href="Contact.html">Contact US</a>
-            </div>
-        </div>
-    </main>
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('hidden');
-        }
-    </script>
+  </head>
+  <body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <div class="logo-symbol">*</div>
+      <div class="logo-text">safi.</div>
+    </div>
+    <nav class="nav-links">
+      <a href="#">À propos</a>
+      <a href="#">Services ▾</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    
+    <h1>
+      Votre <span class="highlight">idee,</span> <span class="highlight">notre</span>
+      <br><span class="underline-smooth">mission</span>
+    </h1>
+    <p class="description">
+      Chez Safi, nous accompagnons les entrepreneurs, startups et créateurs dans la concrétisation de leurs idées.<br />
+      De la création de votre identité visuelle au développement de logiciels, nous vous aidons à bâtir votre projet numérique de A à Z.
+    </p>
+    <div class="buttons">
+      <a href="#" class="btn btn-white">Get started</a>
+      <a href="#" class="btn btn-outline">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Decorative Clouds -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Our Expertise Section -->
+<section class="expertise">
+  <h2 class="section-title">
+    Notre <span class="underline-smooth">Expertise</span>
+  </h2>
+  <p class="section-description">
+    Notre combinaison de créativité et de finesse technique garantit des solutions sur mesure qui valorisent les marques et captivent les audiences, laissant une empreinte inoubliable dans le paysage du design
+  </p>
+
+  <div class="bubbles-container">
+    <span class="bubble blue rotate-2">Web dev</span>
+    <span class="bubble white rotate--3">Software dev</span>
+    <span class="bubble blue rotate-3">UI UX Design</span>
+    <span class="bubble white rotate--5">Cybersecurity</span>
+    <span class="bubble white bold rotate--7">Digital services</span>
+    <span class="bubble blue rotate-1">Deployment & Hosting</span>
+    <span class="bubble white bold rotate--2">Branding</span>
+    <span class="bubble blue rotate-5">Graphics</span>
+  </div>
+
+  <div class="button-wrapper">
+  <a href="#" class="explore-button">Explore More</a>
+</div>
+
+</section>
+
+
+
+<section class="brand-foundation">
+  <div class="content-left">
+    <h2 class="brand-title">Posez les fondations<br>de votre marque.</h2>
+    <p class="brand-description">
+      Chez Safi, nous accompagnons les entrepreneurs, startups et créateurs dans la concrétisation de leurs idées. De la création de votre identité visuelle au développement de logiciels, nous vous aidons à bâtir votre projet numérique de A à Z.
+    </p>
+    <a href="#" class="next-button">Next</a>
+  </div>
+
+  <div class="content-right">
+    <div class="image-wrapper">
+      <img src="images/service 2.png"  />
+    </div>
+  </div>
+</section>
+
 </body>
 </html>

@@ -1,0 +1,387 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url(images/HomeBg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1000;
+  background-color: #0000a3;
+  padding: 30px 40px;
+}
+
+.image-wrapper {
+  padding-left: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo-symbol {
+  font-size: 36px;
+  margin-right: 5px;
+}
+
+.nav-links {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.nav-links a:first-child {
+  font-weight: 700;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin: 100px auto 80px;
+  padding: 0 20px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 90px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: white;
+}
+
+.underline-smooth {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-smooth::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 100%;
+  height: 8px;
+  background: #4c60ff;
+  border-radius: 40px;
+  transform: rotate(-2deg);
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-white {
+  background-color: white;
+  color: #0000aa;
+  border: none;
+}
+
+.btn-white:hover {
+  opacity: 0.9;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: #0000aa;
+}
+
+/* Clouds */
+.cloud {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 100px;
+}
+
+.cloud-left {
+  bottom: 40px;
+  left: 40px;
+}
+
+.cloud-right {
+  top: 80px;
+  right: 60px;
+}
+
+/* Section Structure */
+.expertise {
+  text-align: center;
+  margin: 100px auto 80px;
+  padding: 0 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.section-description {
+  max-width: 900px;
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.section-title .underline-smooth {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title .underline-smooth::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 8px;
+  background: #4c60ff;
+  border-radius: 50px;
+  transform: rotate(-1.5deg);
+}
+
+/* Bubble Container */
+.bubbles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 50px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Bubble Tags */
+.bubble {
+  padding: 18px 32px;
+  border-radius: 999px;
+  font-size: 18px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.bubble.white {
+  background: white;
+  color: black;
+}
+
+.bubble.white.bold {
+  font-weight: 700;
+}
+
+.bubble.blue {
+  background: #5277ff;
+  color: white;
+}
+
+/* Rotation utility classes */
+.rotate-1 { transform: rotate(1deg); }
+.rotate-2 { transform: rotate(2deg); }
+.rotate-3 { transform: rotate(3deg); }
+.rotate-5 { transform: rotate(5deg); }
+.rotate--2 { transform: rotate(-2deg); }
+.rotate--3 { transform: rotate(-3deg); }
+.rotate--5 { transform: rotate(-5deg); }
+.rotate--7 { transform: rotate(-7deg); }
+
+/* Button */
+.explore-button {
+  display: inline-block;
+  padding: 16px 40px;
+  background: white;
+  color: #0000aa;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.explore-button:hover {
+  opacity: 0.9;
+}
+
+/* Brand Foundation Section */
+.brand-foundation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 60px;
+  background-color: #0000a3;
+  color: white;
+}
+
+.content-left {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.brand-title {
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.brand-description {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 550px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 40px;
+}
+
+.next-button {
+  padding: 14px 40px;
+  background-color: white;
+  color: #0000aa;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.next-button:hover {
+  opacity: 0.9;
+}
+
+.content-right {
+  flex: 1;
+  text-align: right;
+}
+
+.content-right img {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+  .nav-links {
+    left: 50% !important;
+  }
+
+  .brand-title {
+    font-size: 40px;
+  }
+
+  .brand-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-foundation {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .content-left,
+  .content-right {
+    padding: 0;
+  }
+
+  .content-right {
+    margin-top: 40px;
+  }
+
+  .content-right img {
+    height: auto;
+    width: 100%;
+  }
+
+  .logo {
+    left: 30px !important;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+}
