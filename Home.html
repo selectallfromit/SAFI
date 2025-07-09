@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Safi | Votre idée, notre mission</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css" />
-    
-  </head>
-  <body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">
-      <div class="logo-symbol">*</div>
-      <div class="logo-text">safi.</div>
-    </div>
-    <nav class="nav-links">
-      <a href="#">À propos</a>
-      <a href="#">Services ▾</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    
-    <h1>
-      Votre <span class="highlight">idee,</span> <span class="highlight">notre</span>
-      <br><span class="underline-smooth">mission</span>
-    </h1>
-    <p class="description">
-      Chez Safi, nous accompagnons les entrepreneurs, startups et créateurs dans la concrétisation de leurs idées.<br />
-      De la création de votre identité visuelle au développement de logiciels, nous vous aidons à bâtir votre projet numérique de A à Z.
-    </p>
-    <div class="buttons">
-      <a href="#" class="btn btn-white">Get started</a>
-      <a href="#" class="btn btn-outline">Contact Us</a>
-    </div>
-  </section>
-
-  <!-- Decorative Clouds -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Xxj28L1K54gONtCMZ4gxpmhx7W5E2St+TZogUu7+bJvMYRb+9U8WoyfsROIK4aNQZf2TnJ7cx8QQA1fg8XdO4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-symbol">*</div>
+            <div class="logo-text">safi.</div>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="#hero">À propos</a>
+            <div class="dropdown">
+                <a href="#">Services ▾</a>
+                <div class="dropdown-menu">
+                    <a href="#expertise">Expertise</a>
+                    <a href="#branding">Branding</a>
+                    <a href="#development">Développement</a>
+                    <a href="#marketing">Marketing</a>
+                </div>
+            </div>
+            <a href="#safi-blog-section">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero reveal" id="hero">
+
+        <h1>
+            Votre <span class="highlight">idee,</span> <span class="highlight">notre</span>
+            <br><span class="underline-smooth">mission</span>
+        </h1>
+        <p class="description">
+            Chez Safi, nous accompagnons les entrepreneurs, startups et créateurs dans la concrétisation de leurs
+            idées.<br />
+            De la création de votre identité visuelle au développement de logiciels, nous vous aidons à bâtir votre
+            projet numérique de A à Z.
+        </p>
+        <div class="buttons">
+            <a href="#expertise" class="btn btn-white">Get started</a>
+            <a href="#contact" class="btn btn-outline">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Decorative Clouds -->
 
 
 
@@ -58,49 +71,252 @@
 
 
 
-<!-- Our Expertise Section -->
-<section class="expertise">
-  <h2 class="section-title">
-    Notre <span class="underline-smooth">Expertise</span>
-  </h2>
-  <p class="section-description">
-    Notre combinaison de créativité et de finesse technique garantit des solutions sur mesure qui valorisent les marques et captivent les audiences, laissant une empreinte inoubliable dans le paysage du design
-  </p>
-
-  <div class="bubbles-container">
-    <span class="bubble blue rotate-2">Web dev</span>
-    <span class="bubble white rotate--3">Software dev</span>
-    <span class="bubble blue rotate-3">UI UX Design</span>
-    <span class="bubble white rotate--5">Cybersecurity</span>
-    <span class="bubble white bold rotate--7">Digital services</span>
-    <span class="bubble blue rotate-1">Deployment & Hosting</span>
-    <span class="bubble white bold rotate--2">Branding</span>
-    <span class="bubble blue rotate-5">Graphics</span>
-  </div>
-
-  <div class="button-wrapper">
-  <a href="#" class="explore-button">Explore More</a>
-</div>
-
-</section>
 
 
 
-<section class="brand-foundation">
-  <div class="content-left">
-    <h2 class="brand-title">Posez les fondations<br>de votre marque.</h2>
-    <p class="brand-description">
-      Chez Safi, nous accompagnons les entrepreneurs, startups et créateurs dans la concrétisation de leurs idées. De la création de votre identité visuelle au développement de logiciels, nous vous aidons à bâtir votre projet numérique de A à Z.
-    </p>
-    <a href="#" class="next-button">Next</a>
-  </div>
+    <!-- Our Expertise Section -->
+    <section class="expertise reveal" id="expertise">
+        <h2 class="section-title">
+            Notre <span class="underline-smooth">Expertise</span>
+        </h2>
+        <p class="section-description">
+            Notre combinaison de créativité et de finesse technique garantit des solutions sur mesure qui valorisent les
+            marques et captivent les audiences, laissant une empreinte inoubliable dans le paysage du design
+        </p>
 
-  <div class="content-right">
-    <div class="image-wrapper">
-      <img src="images/service 2.png"  />
-    </div>
-  </div>
-</section>
+        <div class="bubbles-container">
+            <span class="bubble blue rotate-2">Web dev</span>
+            <span class="bubble white rotate--3">Software dev</span>
+            <span class="bubble blue rotate-3">UI UX Design</span>
+            <span class="bubble white rotate--5">Cybersecurity</span>
+            <span class="bubble white bold rotate--7">Digital services</span>
+            <span class="bubble blue rotate-1">Deployment & Hosting</span>
+            <span class="bubble white bold rotate--2">Branding</span>
+            <span class="bubble blue rotate-5">Graphics</span>
+        </div>
+
+        <div class="button-wrapper">
+            <a href="#branding" class="explore-button">Explore More</a>
+        </div>
+
+    </section>
+
+
+
+    <!-- Section 1: Brand Foundation -->
+    <section class="safi-section reveal" id="branding">
+        <div class="safi-left">
+            <div class="safi-content">
+                <h1 class="safi-title">Posez les fondations<br>de votre marque.</h1>
+                <p class="safi-description">
+                    Chez Safi, nous accompagnons les entrepreneurs, startups et créateurs dans la concrétisation de
+                    leurs idées.
+                    De la création de votre identité visuelle au développement de logiciels, nous vous aidons à bâtir
+                    votre projet
+                    numérique de A à Z.
+                </p>
+                <div class="safi-button">
+                    <a href="#development">Next</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="safi-right">
+            <img src="images/imgS2.jpg" alt="Image SAFI" class="safi-right-image" />
+        </div>
+    </section>
+
+    <!-- Section 2: SAFI Tools -->
+    <section class="safi-section reveal" id="development">
+        <div class="safi-left">
+            <div class="safi-content">
+                <h1 class="safi-title">Développons <br>ensemble vos outils digitaux.</h1>
+                <p class="safi-description">
+                    Nous concevons des solutions logicielles sur mesure pour tous vos besoins :<br>
+                    • Applications web (vitrine, e-commerce, SaaS)<br>
+                    • Applications mobiles (Android & iOS)<br>
+                    • Logiciels desktop (Windows, Linux, multiplateforme)<br>
+                    • Sites vitrine et pages de présentation<br>
+                    Des performances solides, une expérience fluide et un développement 100 % adapté à votre vision.
+                </p>
+                <div class="safi-button">
+                    <a href="#marketing">Next</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="safi-right">
+            <img src="images/imgs3.8.jpg" alt="Image SAFI" class="safi-right-image" />
+        </div>
+    </section>
+
+    <section class="safi-section reveal" id="marketing">
+        <!-- Left Side (Text) -->
+        <div class="safi-left">
+            <div class="safi-content">
+                <h1 class="safi-title">
+                    Mettez votre projet <br> en ligne en toute <br> simplicité.
+                </h1>
+                <p class="safi-description">
+                    Une fois votre site ou application prêt, on vous accompagne pour :<br>
+                    • Acheter un nom de domaine personnalisé<br>
+                    • Héberger votre site ou application sur des serveurs fiables<br>
+                    • Configurer votre environnement (base de données, e-mails, SSL...)<br>
+                    Votre présence en ligne, sans stress.
+                </p>
+                <div class="safi-button">
+                    <a href="#safi-blog-section">Next</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side (Image) -->
+        <div class="safi-right">
+            <img src="images/service 7.png" alt="Hébergement" class="safi-right-image" />
+        </div>
+    </section>
+
+
+    <section class="safi-blog-section reveal" id="safi-blog-section">
+        <div class="safi-blog-container">
+            <h1 class="safi-blog-title">Notre histoire – la naissance de Safi</h1>
+            <p class="safi-blog-paragraph">
+                Chez Safi, tout a commencé avec une idée simple : utiliser notre passion pour le développement et la
+                création digitale afin d'aider d'autres personnes à lancer leurs projets.<br><br>
+                Nous sommes Assed Mustapha Kacemi et Adnène Bendiouis, deux étudiants en informatique passionnés par le
+                code, le design, la technologie… et surtout par le fait de créer des choses qui ont du sens.<br><br>
+                Pendant nos études, on a remarqué que beaucoup de jeunes créateurs ou entrepreneurs avaient de belles
+                idées, mais manquaient de soutien technique pour les transformer en réalité.<br>
+                C’est de là qu’est née Safi — une startup hybride, 100 % en ligne, qui accompagne les projets numériques
+                du début à la fin : branding, développement, déploiement et sécurité.<br><br>
+
+                <strong>Pourquoi le nom Safi ?</strong><br>
+                Le nom Safi s'inspire de la requête SQL bien connue :<br>
+                <code
+                    class="bg-gray-800 text-green-400 px-2 py-1 rounded-md inline-block text-sm mt-2">SELECT * FROM IT</code>
+                — autrement dit : tout l’IT, pour vous.<br>
+                Mais ce n’est pas tout : Safi évoque aussi le mot anglais “Safety”, c’est-à-dire la sécurité, une valeur
+                essentielle dans notre manière de créer des produits fiables et durables.<br><br>
+
+                <strong>Et notre logo ?</strong><br>
+                Le cœur de notre logo, c’est l’étoile “*” de SQL, qui représente l’idée de tout sélectionner, de tout
+                offrir — comme dans une requête complète.<br>
+                Ce symbole traduit notre vision : offrir une solution globale, de la création de marque au produit fini,
+                en passant par l’hébergement et la sécurisation.<br>
+                L’étoile, c’est aussi l’ambition, la créativité et la direction : une étoile qui guide votre
+                projet.<br><br>
+
+                <strong>Une vision simple :</strong><br>
+                Chez Safi, on croit que le digital peut être simple, humain et puissant à la fois.<br>
+                On veut permettre à n’importe qui, où qu’il soit, de transformer une idée en produit réel et
+                professionnel.<br><br>
+
+                Ce blog est notre espace libre. On y partage :<br>
+                • L’évolution de Safi, nos projets et nos coulisses<br>
+                • Des conseils pratiques pour créer et développer une marque<br>
+                • Nos découvertes dans le monde tech<br>
+                • Et notre expérience en tant que jeunes fondateurs passionnés<br><br>
+
+                Merci de nous lire. Merci de faire partie du voyage.
+            </p>
+
+            <div class="safi-blog-button">
+                <a href="#" class="next-button">Next</a>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- Contact Section -->
+    <section class="contact-section reveal" id="contact">
+        <h1 class="contact-title">Vous avez une idée géniale ?</h1>
+        <p class="contact-subtitle">
+            Vous avez une idée géniale que vous aimeriez développer ensemble ?<br>
+            N'hésitez pas à nous en faire part en remplissant les informations ci-dessous.
+        </p>
+
+        <div class="form-container">
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nom & Prénom</label>
+                        <input type="text" id="name" placeholder="Entrez le nom et l'entreprise" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Mail</label>
+                        <input type="email" id="email" placeholder="Entrez l’email" />
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">Dites-nous</label>
+                    <input type="text" id="message" placeholder="Allez-y, parlez-nous de votre idée" />
+                </div>
+                <div class="submit-wrapper">
+                    <button type="submit" class="submit-button">Envoyer l'email</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="logo-footer">* safi.</div>
+                <p>
+                    Safi accompagne les créateurs et les entreprises avec des solutions digitales complètes de
+                    l’identité de marque au développement de logiciels sur mesure, de l’hébergement à la sécurité.
+                    <br />Nous allions créativité, code et attention pour offrir des expériences qui comptent.
+
+                </p>
+                <small>@ 2025 safi.digital All Rights Reserved</small>
+            </div>
+            <div class="footer-center">
+                <a href="#hero">About</a>
+                <a href="#expertise">Services</a>
+                <a href="#safi-blog-section">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-right">
+                <p class="contact-email">contact@safi.digital</p>
+                <p class="contact-phone">+213 542603155</p>
+                <a class="all-links-button" href="https://linktr.ee/selectallfromit" target="_blank"
+                    rel="noopener noreferrer">
+                    Tous nos liens
+                </a>
+            </div>
+
+    </footer>
+
+
+
+
+
+
+
+    <script>
+  const reveals = document.querySelectorAll('.reveal');
+
+  const revealOnScroll = () => {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    reveals.forEach((el) => {
+      const boxTop = el.getBoundingClientRect().top;
+      if (boxTop < triggerBottom) {
+        el.classList.add('visible');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
 
 </body>
+
 </html>
