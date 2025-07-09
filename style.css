@@ -629,6 +629,7 @@ html {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   margin: 0 auto; /* horizontally center inside block-level parent */
   display: block; /* ensure margin auto works */
+  aspect-ratio: 1 / 1;
 }
 
 /* Fullscreen Section */
