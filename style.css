@@ -170,6 +170,7 @@ html {
   left: 60px;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 
 .logo-symbol {
