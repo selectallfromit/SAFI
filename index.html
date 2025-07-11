@@ -32,7 +32,7 @@
 
             <a href="#hero">À propos</a>
             <div class="dropdown">
-                <a href="#">Services ▾</a>
+                <a href="#expertise">Services ▾</a>
                 <div class="dropdown-menu">
                     <a href="#expertise">Expertise</a>
                     <a href="#branding">Branding</a>
@@ -99,7 +99,7 @@
         </div>
 
     <div class="button-wrapper">
-    <a href="#branding" class="explore-button creative-button">Explore More</a>
+    <a href="#branding" class="explore-button creative-button">En savoir plus</a>
 </div>
 
     </section>
@@ -119,7 +119,7 @@
                     numérique de A à Z.
                 </p>
                 <div class="safi-button">
-                    <a href="#development">Next</a>
+                    <a href="#development">Suivant</a>
                 </div>
             </div>
         </div>
@@ -143,7 +143,7 @@
                     Des performances solides, une expérience fluide et un développement 100 % adapté à votre vision.
                 </p>
                 <div class="safi-button">
-                    <a href="#marketing">Next</a>
+                    <a href="#marketing">Suivant</a>
                 </div>
             </div>
         </div>
@@ -168,7 +168,7 @@
                     Votre présence en ligne, sans stress.
                 </p>
                 <div class="safi-button">
-                    <a href="#safi-blog-section">Next</a>
+                    <a href="#safi-blog-section">Suivant</a>
                 </div>
             </div>
         </div>
@@ -225,7 +225,7 @@
             </p>
 </div>
             <div class="safi-blog-button">
-                <a href="#contact" class="next-button">Next</a>
+                <a href="#contact" class="next-button">Suivant</a>
             </div>
         </div>
 
@@ -264,7 +264,7 @@
                 <div class="submit-wrapper">
                     <button type="submit" class="submit-button" id="submit-btn">
                         <span id="submit-text">Envoyer l'email</span>
-                        <span id="loading-text" class="hidden">Envoi...</span>
+                        
                     </button>
                 </div>
             </form>
@@ -307,6 +307,21 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>   
 <script src="script.js"></script>
+<script>
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('navMenu');
+    burger.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('bg-[#4B70F5]');
+            menu.classList.toggle('p-4');
+            menu.classList.toggle('rounded');
+            menu.classList.toggle('top-10');
+            menu.classList.toggle('left-70');
+            menu.classList.toggle('right-0');
+            menu.classList.toggle('z-50');
+        });
+</script>
 
 
 </body>
